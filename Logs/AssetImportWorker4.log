@@ -1,0 +1,332 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32468 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/timmo/Documents/UnityProjects/DrumSimulator
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+64819
+Successfully changed project path to: C:/Users/timmo/Documents/UnityProjects/DrumSimulator
+C:/Users/timmo/Documents/UnityProjects/DrumSimulator
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9804] Host "[IP] 192.168.1.119 [Port] 0 [Flags] 2 [Guid] 1754002814 [EditorId] 1754002814 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9804] Host "[IP] 192.168.1.119 [Port] 0 [Flags] 2 [Guid] 1754002814 [EditorId] 1754002814 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
+Refreshing native plugins compatible for Editor in 4.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/timmo/Documents/UnityProjects/DrumSimulator/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8032 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003441 seconds.
+- Loaded All Assemblies, in  0.407 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.197 seconds
+Domain Reload Profiling: 603ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (131ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (197ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (156ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (104ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.484 seconds
+Refreshing native plugins compatible for Editor in 2.24 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.367 seconds
+Domain Reload Profiling: 851ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (289ms)
+		LoadAssemblies (257ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (92ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (368ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (268ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (205ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (56.8 KB). Loaded Objects now: 3543.
+Memory consumption went from 122.7 MB to 122.6 MB.
+Total: 2.505500 ms (FindLiveObjects: 0.160800 ms CreateObjectMapping: 0.067600 ms MarkObjects: 2.206500 ms  DeleteObjects: 0.069800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23226.936369 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drumsticks FBX
+  artifactKey: Guid(e84c67a14802e4a41b3dfb9e9905a3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drumsticks FBX using Guid(e84c67a14802e4a41b3dfb9e9905a3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034906cb12a1dd31bd32bbcea91cc4cc') in 0.002997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.414010 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drumsticks FBX/Drumsticks.FBX
+  artifactKey: Guid(45f8878a75a08d84eba0f3d166d76a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drumsticks FBX/Drumsticks.FBX using Guid(45f8878a75a08d84eba0f3d166d76a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c489100bfef093fe9ea8ad3017aed0') in 0.137130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 86.050317 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/Material_Diffuse.mat
+  artifactKey: Guid(65965059cb05353409c4b7b9f29b9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/Material_Diffuse.mat using Guid(65965059cb05353409c4b7b9f29b9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc54208d0194250fd5515e0546bd25f') in 0.015783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.123595 seconds.
+  path: Assets/ExternalAssets/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_blue2.mat
+  artifactKey: Guid(ade911f3f1c812949b83122852563a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Ciathyza/Gridbox Prototype Materials/Materials/prototype_512x512_blue2.mat using Guid(ade911f3f1c812949b83122852563a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d294219add33670632e6c83770fbf3') in 0.016213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 47.852674 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb8350d20565bf1ccf1c8487c3bae6f') in 0.080833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 51.174020 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e59af6a6ac7719b65162ce081058618') in 0.149010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 40.835844 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/M_Chrome.mat
+  artifactKey: Guid(4a642412b187a1e46b1998d011e35719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/M_Chrome.mat using Guid(4a642412b187a1e46b1998d011e35719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cfb345b4ce264bd682cd785a294286f') in 0.016716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 18.297528 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd99fc22227c0cd8d76d1bbbce9cae03') in 0.091762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 28.909420 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/M_Diffuse.mat
+  artifactKey: Guid(65965059cb05353409c4b7b9f29b9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/M_Diffuse.mat using Guid(65965059cb05353409c4b7b9f29b9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ac0ac91f50893670ca102ec0be3216') in 0.017775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 80.857311 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/M_Drum.mat
+  artifactKey: Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/M_Drum.mat using Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177afdfebb36ad9708080cc7eaaedc02') in 0.025458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 29.799216 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44fd0d4d69d90b20cd3af734c83c0c1') in 0.062515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 22.661030 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/M_Drum.mat
+  artifactKey: Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/M_Drum.mat using Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7644aeb9cd1aab9498d2872bd47906') in 0.023063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.710638 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab9cde93cfc94805a2607fbf912611d') in 0.089131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 25.040064 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/M_Diffuse.mat
+  artifactKey: Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/M_Diffuse.mat using Guid(c7d6360ba47a4144d9f5ee0c48c101fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542c0b49f3879df80b8d891d84919a04') in 0.023705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 63.388227 seconds.
+  path: Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX
+  artifactKey: Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Drum Set FBX/Drum Set.FBX using Guid(3eedbd205260fd94aa5eafb41c368542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f2eb2abf465baa85576f038bd3c873') in 0.096640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 51
+========================================================================
+Received Import Request.
+  Time since last request: 167.693082 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/drum_kit_normal.jpg
+  artifactKey: Guid(07a1cf265742f684299ef62102dcdc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/drum_kit_normal.jpg using Guid(07a1cf265742f684299ef62102dcdc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2358a6746ef240cf2dbda01dabe5cc38') in 0.028269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 104.095664 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/chrome.mat
+  artifactKey: Guid(2800e10146323e741b63a638c71d0943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/chrome.mat using Guid(2800e10146323e741b63a638c71d0943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f84dcf5bec529faf55bcbc620adbce') in 0.182624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/faces.mat
+  artifactKey: Guid(51d8b8a714b3396418e5e21d6c16bd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/faces.mat using Guid(51d8b8a714b3396418e5e21d6c16bd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce2f611cdbcab9c8109a436a8fd967c') in 0.034085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ExternalAssets/DrumKit/Materials/main.mat
+  artifactKey: Guid(5ab67e1fb82dd3044bf39f9f4ab091e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/DrumKit/Materials/main.mat using Guid(5ab67e1fb82dd3044bf39f9f4ab091e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee59c16687642852a2b73c6e02913dc') in 0.021283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
