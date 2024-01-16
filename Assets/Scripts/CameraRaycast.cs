@@ -24,6 +24,15 @@ public class CameraRaycast : MonoBehaviour
     [SerializeField] InputAction mousePos = null;
     [SerializeField] InputAction hit = null;
 
+    [SerializeField] InputAction charleston = null;
+    [SerializeField] InputAction crash = null;
+    [SerializeField] InputAction highTom = null;
+    [SerializeField] InputAction mediumTom = null;
+    [SerializeField] InputAction lowTom = null;
+    [SerializeField] InputAction ride = null;
+    [SerializeField] InputAction bass = null;
+
+
     float initialDetectionDistance = 0;
     void Awake()
     { 
@@ -97,6 +106,27 @@ public class CameraRaycast : MonoBehaviour
 
         hit = controls.Player.Hit;
         hit.Enable();
+
+        charleston = controls.Player.Charleston;
+        charleston.Enable();
+
+        crash = controls.Player.Crash;
+        crash.Enable();
+
+        ride = controls.Player.Ride;
+        ride.Enable();
+
+        highTom = controls.Player.HighTom;
+        highTom.Enable();
+
+        mediumTom = controls.Player.MediumTom;
+        mediumTom.Enable();
+
+        lowTom = controls.Player.LowTom;
+        lowTom.Enable();
+
+        bass = controls.Player.Bass;
+        bass.Enable();
     }
 
 

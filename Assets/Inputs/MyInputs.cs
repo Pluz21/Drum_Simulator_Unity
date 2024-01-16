@@ -44,6 +44,69 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Crash"",
+                    ""type"": ""Button"",
+                    ""id"": ""4245e76d-84a8-4234-881f-7c2f799ba47d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Charleston"",
+                    ""type"": ""Button"",
+                    ""id"": ""da0a5308-763b-4b85-a8b8-ff33ebcf9041"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""HighTom"",
+                    ""type"": ""Button"",
+                    ""id"": ""84454824-8206-4637-88ef-9281000e70de"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MediumTom"",
+                    ""type"": ""Button"",
+                    ""id"": ""3a536152-a2a7-4b1e-9c83-0b3ece8bb22c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Ride"",
+                    ""type"": ""Button"",
+                    ""id"": ""bc384f95-0c3e-48e8-adeb-a22f7f65a50e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Bass"",
+                    ""type"": ""Button"",
+                    ""id"": ""49ab1125-ef6a-4e6b-a851-a70113bed678"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LowTom"",
+                    ""type"": ""Button"",
+                    ""id"": ""0063a65c-74f9-45e8-841f-6bcdaea00fc5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -66,6 +129,94 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Hit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eed7829d-5ee9-46e2-b55c-88b6506e1238"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Hit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2a779e8-0f16-446e-9ae4-48700c74463a"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Crash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d13c69db-89f7-499b-b585-325abf8b750d"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Charleston"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""91385300-a9aa-4549-a5d5-d4f5a32b21eb"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""HighTom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""91f94d98-23c9-4766-a5fb-4bfbf7ead0fb"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""MediumTom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7e5f3d47-cad2-4b9a-9228-7d9f00baad77"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Ride"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""63c6127b-0bac-4f50-b0fc-d4916de037bb"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Bass"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e349b0e8-a80d-40be-b1a7-7b1bd745fbb7"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""LowTom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -139,6 +290,13 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_MousePos = m_Player.FindAction("MousePos", throwIfNotFound: true);
         m_Player_Hit = m_Player.FindAction("Hit", throwIfNotFound: true);
+        m_Player_Crash = m_Player.FindAction("Crash", throwIfNotFound: true);
+        m_Player_Charleston = m_Player.FindAction("Charleston", throwIfNotFound: true);
+        m_Player_HighTom = m_Player.FindAction("HighTom", throwIfNotFound: true);
+        m_Player_MediumTom = m_Player.FindAction("MediumTom", throwIfNotFound: true);
+        m_Player_Ride = m_Player.FindAction("Ride", throwIfNotFound: true);
+        m_Player_Bass = m_Player.FindAction("Bass", throwIfNotFound: true);
+        m_Player_LowTom = m_Player.FindAction("LowTom", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -202,12 +360,26 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_MousePos;
     private readonly InputAction m_Player_Hit;
+    private readonly InputAction m_Player_Crash;
+    private readonly InputAction m_Player_Charleston;
+    private readonly InputAction m_Player_HighTom;
+    private readonly InputAction m_Player_MediumTom;
+    private readonly InputAction m_Player_Ride;
+    private readonly InputAction m_Player_Bass;
+    private readonly InputAction m_Player_LowTom;
     public struct PlayerActions
     {
         private @MyInputs m_Wrapper;
         public PlayerActions(@MyInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @MousePos => m_Wrapper.m_Player_MousePos;
         public InputAction @Hit => m_Wrapper.m_Player_Hit;
+        public InputAction @Crash => m_Wrapper.m_Player_Crash;
+        public InputAction @Charleston => m_Wrapper.m_Player_Charleston;
+        public InputAction @HighTom => m_Wrapper.m_Player_HighTom;
+        public InputAction @MediumTom => m_Wrapper.m_Player_MediumTom;
+        public InputAction @Ride => m_Wrapper.m_Player_Ride;
+        public InputAction @Bass => m_Wrapper.m_Player_Bass;
+        public InputAction @LowTom => m_Wrapper.m_Player_LowTom;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -223,6 +395,27 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
             @Hit.started += instance.OnHit;
             @Hit.performed += instance.OnHit;
             @Hit.canceled += instance.OnHit;
+            @Crash.started += instance.OnCrash;
+            @Crash.performed += instance.OnCrash;
+            @Crash.canceled += instance.OnCrash;
+            @Charleston.started += instance.OnCharleston;
+            @Charleston.performed += instance.OnCharleston;
+            @Charleston.canceled += instance.OnCharleston;
+            @HighTom.started += instance.OnHighTom;
+            @HighTom.performed += instance.OnHighTom;
+            @HighTom.canceled += instance.OnHighTom;
+            @MediumTom.started += instance.OnMediumTom;
+            @MediumTom.performed += instance.OnMediumTom;
+            @MediumTom.canceled += instance.OnMediumTom;
+            @Ride.started += instance.OnRide;
+            @Ride.performed += instance.OnRide;
+            @Ride.canceled += instance.OnRide;
+            @Bass.started += instance.OnBass;
+            @Bass.performed += instance.OnBass;
+            @Bass.canceled += instance.OnBass;
+            @LowTom.started += instance.OnLowTom;
+            @LowTom.performed += instance.OnLowTom;
+            @LowTom.canceled += instance.OnLowTom;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -233,6 +426,27 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
             @Hit.started -= instance.OnHit;
             @Hit.performed -= instance.OnHit;
             @Hit.canceled -= instance.OnHit;
+            @Crash.started -= instance.OnCrash;
+            @Crash.performed -= instance.OnCrash;
+            @Crash.canceled -= instance.OnCrash;
+            @Charleston.started -= instance.OnCharleston;
+            @Charleston.performed -= instance.OnCharleston;
+            @Charleston.canceled -= instance.OnCharleston;
+            @HighTom.started -= instance.OnHighTom;
+            @HighTom.performed -= instance.OnHighTom;
+            @HighTom.canceled -= instance.OnHighTom;
+            @MediumTom.started -= instance.OnMediumTom;
+            @MediumTom.performed -= instance.OnMediumTom;
+            @MediumTom.canceled -= instance.OnMediumTom;
+            @Ride.started -= instance.OnRide;
+            @Ride.performed -= instance.OnRide;
+            @Ride.canceled -= instance.OnRide;
+            @Bass.started -= instance.OnBass;
+            @Bass.performed -= instance.OnBass;
+            @Bass.canceled -= instance.OnBass;
+            @LowTom.started -= instance.OnLowTom;
+            @LowTom.performed -= instance.OnLowTom;
+            @LowTom.canceled -= instance.OnLowTom;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -299,5 +513,12 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
     {
         void OnMousePos(InputAction.CallbackContext context);
         void OnHit(InputAction.CallbackContext context);
+        void OnCrash(InputAction.CallbackContext context);
+        void OnCharleston(InputAction.CallbackContext context);
+        void OnHighTom(InputAction.CallbackContext context);
+        void OnMediumTom(InputAction.CallbackContext context);
+        void OnRide(InputAction.CallbackContext context);
+        void OnBass(InputAction.CallbackContext context);
+        void OnLowTom(InputAction.CallbackContext context);
     }
 }
