@@ -17,6 +17,9 @@ public class CameraRaycast : MonoBehaviour
     [SerializeField] LayerMask drumLayer;
     [SerializeField] Stick stick = null;
     [SerializeField] GameObject drumElementHit= null;
+    [SerializeField] RaycastHit drumHit;
+
+    //Inputs 
     [SerializeField] MyInputs controls = null;
     [SerializeField] InputAction mousePos = null;
     [SerializeField] InputAction hit = null;
@@ -34,7 +37,6 @@ public class CameraRaycast : MonoBehaviour
     void Init()
     {
         initialDetectionDistance = detectionDistance;
-        OnRaycastHit += InteractWithDrumElement;
     }
 
     void Update()
@@ -53,6 +55,7 @@ public class CameraRaycast : MonoBehaviour
             Debug.Log($"hit drum : {drumDetect}");
         if (drumDetect)
         {
+            drumHit = _drumHitResult;
             detectionDistance = _drumHitResult.distance + 2;
             UpdateStickPosition(_drumHitResult.point);
             hit.performed += HitDrum;
@@ -70,6 +73,7 @@ public class CameraRaycast : MonoBehaviour
     private void HitDrum(InputAction.CallbackContext _context)
     {
         Debug.Log("Hit the drum");
+        InteractWithDrumElement(drumHit);
     }
 
     void UpdateStickPosition(Vector3 _pos)
