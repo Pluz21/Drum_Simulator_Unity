@@ -9,6 +9,8 @@ public class Drumkit : MonoBehaviour
         HIGH,
         MEDIUM,
         LOW,
+        SNARE,
+        SNARE_NOSNARE,
         BASS,
         CHARLESTON,
         CRASH,
@@ -22,6 +24,7 @@ public class Drumkit : MonoBehaviour
     [SerializeField] AudioClip highTomsound = null;
     [SerializeField] AudioClip mediumTomSound = null;
     [SerializeField] AudioClip lowTomSound = null;
+    [SerializeField] AudioClip snareSound = null;
     [SerializeField] AudioClip bassSound = null;
     [SerializeField] AudioClip charlestonSound = null;
     [SerializeField] AudioClip crashSound = null;
@@ -76,6 +79,9 @@ public class Drumkit : MonoBehaviour
                 break;
             case DrumTypes.RIDE:
                 SetSoundToPlay(rideSound);
+                break;
+            case DrumTypes.SNARE:
+                SetSoundToPlay(snareSound);
                 break;
 
         }
