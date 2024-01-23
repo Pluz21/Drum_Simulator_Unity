@@ -17,6 +17,7 @@ public class CameraRaycast : MonoBehaviour
     [SerializeField] LayerMask drumLayer;
     [SerializeField] Stick stick = null;
     [SerializeField] GameObject drumElementHit= null;
+    [SerializeField] Drumkit bassDrum = null;
     [SerializeField] RaycastHit drumHit;
 
     //Inputs 
@@ -46,6 +47,7 @@ public class CameraRaycast : MonoBehaviour
     void Init()
     {
         initialDetectionDistance = detectionDistance;
+        bass.performed += InteractWithBass;
     }
 
     void Update()
@@ -97,7 +99,13 @@ public class CameraRaycast : MonoBehaviour
         Drumkit _drumKitElement = drumElementHit.GetComponent<Drumkit>();
         if (!_drumKitElement) return;
         _drumKitElement.PlaySound();
+    }
 
+    void InteractWithBass(InputAction.CallbackContext _context)
+    {
+        Debug.Log("called interact with bass"); 
+        if (bassDrum.drumType == Drumkit.DrumTypes.BASS)
+            bassDrum.PlaySound();
     }
     void OnEnable()
     {

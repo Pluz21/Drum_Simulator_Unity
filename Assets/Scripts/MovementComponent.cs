@@ -8,7 +8,7 @@ public class MovementComponent : MonoBehaviour
 {
     public event Action OnPositionReached;
     Vector3 initialPosition = Vector3.zero;
-    [SerializeField] Light lightToMove = null;
+    [SerializeField] CustomLight lightToMove = null;
     [SerializeField] float moveSpeed = 1;
     [SerializeField] Vector3 moveDirection = Vector3.zero;
     [SerializeField] bool canMove = true;
