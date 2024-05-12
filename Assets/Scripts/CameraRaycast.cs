@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor;
 
 
 public class CameraRaycast : MonoBehaviour
@@ -46,9 +47,13 @@ public class CameraRaycast : MonoBehaviour
 
     void Init()
     {
+
         initialDetectionDistance = detectionDistance;
         bass.performed += InteractWithBass;
+        
     }
+
+  
 
     void Update()
     {
@@ -62,10 +67,11 @@ public class CameraRaycast : MonoBehaviour
         screenRay = Camera.main.ScreenPointToRay(_pos);
         bool _hitDrum = Physics.Raycast(screenRay, out RaycastHit _drumHitResult, detectionDistance,drumLayer);
         Debug.DrawRay(screenRay.origin, screenRay.direction * 20);
-        drumDetect = _hitDrum; 
-            Debug.Log($"hit drum : {drumDetect}");
+        drumDetect = _hitDrum;
+
         if (drumDetect)
         {
+            Debug.Log("Drum detected");
             drumHit = _drumHitResult;
             detectionDistance = _drumHitResult.distance + 2;
             UpdateStickPosition(_drumHitResult.point);
@@ -83,7 +89,7 @@ public class CameraRaycast : MonoBehaviour
 
     private void HitDrum(InputAction.CallbackContext _context)
     {
-        Debug.Log("Hit the drum");
+        Debug.Log("Called HitDrum Input");
         InteractWithDrumElement(drumHit);
     }
 
@@ -94,6 +100,7 @@ public class CameraRaycast : MonoBehaviour
 
     void InteractWithDrumElement(RaycastHit _hitResult)
     {
+        if (!_hitResult.transform) return;
         drumElementHit = _hitResult.transform.gameObject;
         if (!drumElementHit) return;
         Drumkit _drumKitElement = drumElementHit.GetComponent<Drumkit>();
