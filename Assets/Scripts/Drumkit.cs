@@ -6,6 +6,7 @@ using UnityEngine;
 public class Drumkit : MonoBehaviour
 {
     [SerializeField] public enum DrumTypes {
+        None,
         HIGH,
         MEDIUM,
         LOW,
@@ -30,28 +31,73 @@ public class Drumkit : MonoBehaviour
     [SerializeField] AudioClip crashSound = null;
     [SerializeField] AudioClip rideSound = null;
 
+    #region Accessors 
+    public AudioSource SoundSource
+    {
+        get { return soundSource; }
+        set { soundSource = value; }
+    }
+    public AudioClip HighTomSound
+    {
+        get { return highTomsound; }
+        set { highTomsound = value; }
+    }
+
+    public AudioClip MediumTomSound
+    {
+        get { return mediumTomSound; }
+        set { mediumTomSound = value; }
+    }
+
+    public AudioClip LowTomSound
+    {
+        get { return lowTomSound; }
+        set { lowTomSound = value; }
+    }
+
+    public AudioClip SnareSound
+    {
+        get { return snareSound; }
+        set { snareSound = value; }
+    }
+
+    public AudioClip BassSound
+    {
+        get { return bassSound; }
+        set { bassSound = value; }
+    }
+
+    public AudioClip CharlestonSound
+    {
+        get { return charlestonSound; }
+        set { charlestonSound = value; }
+    }
+
+    public AudioClip CrashSound
+    {
+        get { return crashSound; }
+        set { crashSound = value; }
+    }
+
+    public AudioClip RideSound
+    {
+        get { return rideSound; }
+        set { rideSound = value; }
+    }
+
+    #endregion
+
     void Start()
     {
         Init();
-        SwitchInit();
+        SwitchDrumType();
     }
     void Init()
     {
-        SetBaseSounds();
         soundSource = GetComponent<AudioSource>();
     }
-    void SetBaseSounds()
-    {
-        //highTomsound =  Resources.Load<AudioClip>("High.wav");
-        //mediumTomSound = Resources.Load<AudioClip>("Medium.wav");
-        //lowTomSound = Resources.Load<AudioClip>("Low.wav");
-        //highTomsound = null;
-        //highTomsound = null;
-        //highTomsound = null;
-        //highTomsound = null;
-    }
 
-    void SwitchInit()
+    void SwitchDrumType()
     {
         switch (drumType)
         {
@@ -85,11 +131,6 @@ public class Drumkit : MonoBehaviour
                 break;
 
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void PlaySound()
