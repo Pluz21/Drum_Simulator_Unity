@@ -1,14 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static Drumkit;
 
-public class DrumKit_Interaction : MonoBehaviour
+public class DrumKitController : MonoBehaviour
 {
-    InputsComponent inputs = null;
-    public List<Drumkit> drumKitList = null;
-    DrumTypes drumType = DrumTypes.None;
+    [SerializeField] public AudioSource bassSoundSource = null;
+    [SerializeField] public AudioSource highTomSoundSource = null;
+    [SerializeField] public AudioSource mediumTomSoundSource = null;
+    [SerializeField] public AudioSource lowTomSoundSource = null;
+    [SerializeField] public AudioSource snareSoundSource = null;
+    [SerializeField] public AudioSource charlestonSoundSource = null;
+    [SerializeField] public AudioSource crashSoundSource = null;
+    [SerializeField] public AudioSource rideSoundSource = null;
+
+
     void Start()
     {
         Init();
@@ -16,47 +21,75 @@ public class DrumKit_Interaction : MonoBehaviour
 
     void Init()
     {
-        inputs = GetComponent<InputsComponent>();
+        InputsComponent inputs = GetComponent<InputsComponent>();
+
+        //bassSoundSource = GetComponent<AudioSource>();
+        //highTomSoundSource = GetComponent<AudioSource>();
+        //mediumTomSoundSource = GetComponent<AudioSource>();
+        //lowTomSoundSource = GetComponent<AudioSource>();
+        //snareSoundSource = GetComponent<AudioSource>();
+        //charlestonSoundSource = GetComponent<AudioSource>();
+        //crashSoundSource = GetComponent<AudioSource>();
+        //rideSoundSource = GetComponent<AudioSource>();
+
+        inputs.Bass.performed += InteractWithBass;
+        inputs.HighTom.performed += InteractWithHighTom;
+        inputs.MediumTom.performed += InteractWithMediumTom;
+        inputs.LowTom.performed += InteractWithLowTom;
+        inputs.Snare.performed += InteractWithSnare;
+        inputs.Charleston.performed += InteractWithCharleston;
+        inputs.Crash.performed += InteractWithCrash;
+        inputs.Ride.performed += InteractWithRide;
     }
 
-    /// <summary>
-    /// Use this overload for keyboard use
-    /// </summary>
-    /// <param name="_drumKitElement"></param>
-    public void InteractWithDrumElement(AudioSource _drumElementAudio)  // Ideally should be placed in a separate component
+    public void InteractWithBass(InputAction.CallbackContext context)
     {
-        if (!_drumElementAudio) return;
-        _drumElementAudio.Play();
+        if (!bassSoundSource) return;
+        bassSoundSource.Play();
+        Debug.Log("pressed bass input");
     }
 
-    DrumTypes FindDrumType()
+    public void InteractWithHighTom(InputAction.CallbackContext context)
     {
-        if (drumKitList == null) return DrumTypes.None;
-
-        int _size = drumKitList.Count;
-        for (int i = 0; i < _size; i++)
-        {
-            switch (drumType)
-            {
-                case DrumTypes.HIGH:
-                    InteractWithDrumElement(drumKitList[i].SoundSource);
-                    break;
-                case DrumTypes.MEDIUM:
-                    break;
-                case DrumTypes.LOW:
-                    break;
-                case DrumTypes.BASS:
-                    break;
-                case DrumTypes.CHARLESTON:
-                    break;
-                case DrumTypes.CRASH:
-                    break;
-                case DrumTypes.RIDE:
-                    break;
-                case DrumTypes.SNARE:
-                    break;
-            }
-        }
-        return DrumTypes.None;
+        if (!highTomSoundSource) return;
+        highTomSoundSource.Play();
     }
+
+    public void InteractWithMediumTom(InputAction.CallbackContext context)
+    {
+        if (!mediumTomSoundSource) return;
+        mediumTomSoundSource.Play();
+    }
+
+    public void InteractWithLowTom(InputAction.CallbackContext context)
+    {
+        if (!lowTomSoundSource) return;
+        lowTomSoundSource.Play();
+    }
+
+    public void InteractWithSnare(InputAction.CallbackContext context)
+    {
+        if (!snareSoundSource) return;
+        snareSoundSource.Play();
+    }
+
+    public void InteractWithCharleston(InputAction.CallbackContext context)
+    {
+        if (!charlestonSoundSource) return;
+        charlestonSoundSource.Play();
+    }
+
+    public void InteractWithCrash(InputAction.CallbackContext context)
+    {
+        if (!crashSoundSource) return;
+        crashSoundSource.Play();
+    }
+
+    public void InteractWithRide(InputAction.CallbackContext context)
+    {
+        if (!rideSoundSource) return;
+        rideSoundSource.Play();
+    }
+
+    // Implement similar methods for other drum types if needed
 }

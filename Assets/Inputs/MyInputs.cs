@@ -107,6 +107,15 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Snare"",
+                    ""type"": ""Button"",
+                    ""id"": ""75c2dbcd-7693-4525-aa0a-5ea460c7fe73"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -125,17 +134,6 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""02ed8e7b-aec0-429c-83f3-cc5c3937df1c"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Hit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""eed7829d-5ee9-46e2-b55c-88b6506e1238"",
-                    ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -201,7 +199,7 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""63c6127b-0bac-4f50-b0fc-d4916de037bb"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -217,6 +215,17 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""LowTom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""610f5adc-5e00-4522-a23c-ea586ca514ab"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Snare"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -345,6 +354,7 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
         m_Player_Ride = m_Player.FindAction("Ride", throwIfNotFound: true);
         m_Player_Bass = m_Player.FindAction("Bass", throwIfNotFound: true);
         m_Player_LowTom = m_Player.FindAction("LowTom", throwIfNotFound: true);
+        m_Player_Snare = m_Player.FindAction("Snare", throwIfNotFound: true);
         // Touch
         m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
         m_Touch_TouchPosition = m_Touch.FindAction("TouchPosition", throwIfNotFound: true);
@@ -419,6 +429,7 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Ride;
     private readonly InputAction m_Player_Bass;
     private readonly InputAction m_Player_LowTom;
+    private readonly InputAction m_Player_Snare;
     public struct PlayerActions
     {
         private @MyInputs m_Wrapper;
@@ -432,6 +443,7 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
         public InputAction @Ride => m_Wrapper.m_Player_Ride;
         public InputAction @Bass => m_Wrapper.m_Player_Bass;
         public InputAction @LowTom => m_Wrapper.m_Player_LowTom;
+        public InputAction @Snare => m_Wrapper.m_Player_Snare;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -468,6 +480,9 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
             @LowTom.started += instance.OnLowTom;
             @LowTom.performed += instance.OnLowTom;
             @LowTom.canceled += instance.OnLowTom;
+            @Snare.started += instance.OnSnare;
+            @Snare.performed += instance.OnSnare;
+            @Snare.canceled += instance.OnSnare;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -499,6 +514,9 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
             @LowTom.started -= instance.OnLowTom;
             @LowTom.performed -= instance.OnLowTom;
             @LowTom.canceled -= instance.OnLowTom;
+            @Snare.started -= instance.OnSnare;
+            @Snare.performed -= instance.OnSnare;
+            @Snare.canceled -= instance.OnSnare;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -626,6 +644,7 @@ public partial class @MyInputs: IInputActionCollection2, IDisposable
         void OnRide(InputAction.CallbackContext context);
         void OnBass(InputAction.CallbackContext context);
         void OnLowTom(InputAction.CallbackContext context);
+        void OnSnare(InputAction.CallbackContext context);
     }
     public interface ITouchActions
     {

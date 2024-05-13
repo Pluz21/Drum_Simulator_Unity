@@ -15,6 +15,7 @@ public class InputsComponent : MonoBehaviour
     [SerializeField] InputAction lowTom = null;
     [SerializeField] InputAction ride = null;
     [SerializeField] InputAction bass = null;
+    [SerializeField] InputAction snare = null;
     [SerializeField] InputAction hit = null;
 
     [SerializeField] MyInputs controls = null;
@@ -67,6 +68,11 @@ public class InputsComponent : MonoBehaviour
         get { return hit; }
         set { hit = value; }
     }
+    public InputAction Snare
+    {
+        get { return snare; }
+        set { snare = value; }
+    }
 
     #endregion
 
@@ -108,5 +114,8 @@ public class InputsComponent : MonoBehaviour
 
         bass = controls.Player.Bass;
         bass.Enable();
+
+        snare = controls.Player.Snare;
+        snare.Enable();
     }
 }

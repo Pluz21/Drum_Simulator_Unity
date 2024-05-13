@@ -90,14 +90,23 @@ public class Drumkit : MonoBehaviour
     void Start()
     {
         Init();
-        SwitchDrumType();
+        InitSwitchDrumType();
+        InitSoundSourceClip();
     }
     void Init()
     {
         soundSource = GetComponent<AudioSource>();
+     
+
+        // Initialize each sourcSource to its own
+    }
+    void InitSoundSourceClip()
+    {
+        if (!soundSource) return;
+        soundSource.clip = soundToPlay;
     }
 
-    void SwitchDrumType()
+    void InitSwitchDrumType()
     {
         switch (drumType)
         {
@@ -143,4 +152,5 @@ public class Drumkit : MonoBehaviour
     {
         soundToPlay = _soundToPlay;
     }
+
 }
