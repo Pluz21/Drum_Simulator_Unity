@@ -17,6 +17,7 @@ public class UI_Button_Play : UI_Button
         Hide(toHide);
         SetControledCamera(cameraToControl);
         SwapControlledCamera();
+        SwapAudioListener();
     }
 
     protected override void Init()
@@ -52,5 +53,14 @@ public class UI_Button_Play : UI_Button
         {
             _moveComponent.SetCanMove(_value);
         }
+    }
+
+    private void SwapAudioListener()
+    {
+        if (!cameraToHide) return;
+        AudioListener _listenerToDisable =  cameraToHide.GetComponent<AudioListener>();
+        _listenerToDisable.enabled = false;
+        AudioListener _listenerToEnable =  cameraToControl.GetComponent<AudioListener>();
+        _listenerToEnable.enabled = true;
     }
 }
