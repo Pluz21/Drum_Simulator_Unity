@@ -14,6 +14,7 @@ public class DrumKitController : MonoBehaviour
     [SerializeField] public AudioSource crashSoundSource = null;
     [SerializeField] public AudioSource rideSoundSource = null;
 
+    // drumKitList needs to be filled with every single element of the drumkit
     [SerializeField] List<Drumkit> drumKitList = null;
 
     void Start()
@@ -25,18 +26,8 @@ public class DrumKitController : MonoBehaviour
     {
         InputsComponent inputs = GetComponent<InputsComponent>();
 
-        //bassSoundSource = GetComponent<AudioSource>();
-        //highTomSoundSource = GetComponent<AudioSource>();
-        //mediumTomSoundSource = GetComponent<AudioSource>();
-        //lowTomSoundSource = GetComponent<AudioSource>();
-        //snareSoundSource = GetComponent<AudioSource>();
-        //charlestonSoundSource = GetComponent<AudioSource>();
-        //crashSoundSource = GetComponent<AudioSource>();
-        //rideSoundSource = GetComponent<AudioSource>();
-
         inputs.Bass.performed += (c) => InteractWithDrumKit(c,DrumTypes.BASS);
         inputs.HighTom.performed += (c) => InteractWithDrumKit(c, DrumTypes.HIGH);
-        //inputs.HighTom.performed += InteractWithHighTom;
         inputs.MediumTom.performed += (c) => InteractWithDrumKit(c, DrumTypes.MEDIUM);
         inputs.LowTom.performed += (c) => InteractWithDrumKit(c, DrumTypes.LOW);
         inputs.Snare.performed += (c) => InteractWithDrumKit(c, DrumTypes.SNARE);

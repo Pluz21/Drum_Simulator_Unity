@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 69023017}
   - component: {fileID: 69023016}
   m_Layer: 3
-  m_Name: MediumTomSkinDetect
+  m_Name: MediumTomSkinDetect_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6739,7 +6739,7 @@ GameObject:
   - component: {fileID: 657997225}
   - component: {fileID: 657997224}
   m_Layer: 3
-  m_Name: CrashCymbalDetect
+  m_Name: CrashCymbalDetect_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8260,7 +8260,7 @@ GameObject:
   - component: {fileID: 842025721}
   - component: {fileID: 842025720}
   m_Layer: 3
-  m_Name: Charleston
+  m_Name: Charleston_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9421,6 +9421,8 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: CameraPlayer
   m_TagString: MainCamera
@@ -9531,20 +9533,24 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  hit:
-    m_Name: Hit
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 76255583-5096-4d59-9b7f-1d6980514b36
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
+  inputs: {fileID: 0}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812b420c003ea394a90034126dd2e039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   charleston:
     m_Name: Charleston
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 173a7207-b783-44cc-b4ab-ddbb664d0c40
+    m_Id: c212f74a-b062-451e-9e6d-b33c1a2f6bee
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9553,7 +9559,7 @@ MonoBehaviour:
     m_Name: Crash
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 541af105-9999-46a4-a2f3-34b2eca1b322
+    m_Id: 86391684-1e24-482f-87a9-52da8cd2bc56
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9562,7 +9568,7 @@ MonoBehaviour:
     m_Name: High Tom
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 287099d5-1193-4839-aadf-53cf2d1e810c
+    m_Id: 4e560095-af03-4aae-82ad-e7d6b33652ac
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9571,7 +9577,7 @@ MonoBehaviour:
     m_Name: Medium Tom
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 1a3ccbc1-97e0-435f-b81d-a505c332d72f
+    m_Id: 43a849de-eab0-46dd-8614-cb399d93f643
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9580,7 +9586,7 @@ MonoBehaviour:
     m_Name: Low Tom
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: a09008e0-089c-46a3-8a2a-3dd93ee141e4
+    m_Id: 2c7f0fc6-b0ab-49fb-8411-749bebc57211
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9589,7 +9595,7 @@ MonoBehaviour:
     m_Name: Ride
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: c7c79911-40ed-4fa1-a548-3b2cf302bbae
+    m_Id: ff0f8e22-0e6c-4ce3-8379-1af9b331a163
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -9598,11 +9604,59 @@ MonoBehaviour:
     m_Name: Bass
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: caa89999-8e74-44ee-88cf-1d11cf1e30c3
+    m_Id: 28b54cb1-2ec7-4a70-a483-2e7e900b774c
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  snare:
+    m_Name: Snare
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 166706f7-bb25-43e3-8f29-f4332f9c262a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  hit:
+    m_Name: Hit
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ef6fab63-9ab4-4267-8491-f1c5ba122998
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203fea9b9dd22d14181c8df64f5ae978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bassSoundSource: {fileID: 0}
+  highTomSoundSource: {fileID: 0}
+  mediumTomSoundSource: {fileID: 0}
+  lowTomSoundSource: {fileID: 0}
+  snareSoundSource: {fileID: 0}
+  charlestonSoundSource: {fileID: 0}
+  crashSoundSource: {fileID: 0}
+  rideSoundSource: {fileID: 0}
+  drumKitList:
+  - {fileID: 5368599197240447400}
+  - {fileID: 7129259887867778354}
+  - {fileID: 4806424534103580145}
+  - {fileID: 9056654234227443102}
+  - {fileID: 382948971319971331}
+  - {fileID: 2091707194405373640}
+  - {fileID: 6775020614075544907}
+  - {fileID: 8395203337905125190}
+  - {fileID: 2049221841}
 --- !u!1 &964831782
 GameObject:
   m_ObjectHideFlags: 0
@@ -11101,7 +11155,7 @@ GameObject:
   - component: {fileID: 1155442330}
   - component: {fileID: 1155442329}
   m_Layer: 3
-  m_Name: CrashCymbal
+  m_Name: CrashCymbal_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14905,7 +14959,7 @@ GameObject:
   - component: {fileID: 1671599277}
   - component: {fileID: 1671599276}
   m_Layer: 3
-  m_Name: BassCollider
+  m_Name: BassCollider_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15079,7 +15133,7 @@ GameObject:
   - component: {fileID: 1685990509}
   - component: {fileID: 1685990508}
   m_Layer: 3
-  m_Name: LowTomSkinDetect
+  m_Name: LowTomSkinDetect_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15349,7 +15403,7 @@ GameObject:
   - component: {fileID: 1696584898}
   - component: {fileID: 1696584897}
   m_Layer: 3
-  m_Name: RideCymbal
+  m_Name: RideCymbal_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17729,7 +17783,7 @@ GameObject:
   - component: {fileID: 1944975054}
   - component: {fileID: 1944975053}
   m_Layer: 3
-  m_Name: HighestTomSkinDetect
+  m_Name: HighestTomSkinDetect_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18678,7 +18732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 3
+  drumType: 4
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -19619,7 +19673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 0
+  drumType: 1
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -20358,7 +20412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 2
+  drumType: 3
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -21486,7 +21540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 5
+  drumType: 6
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -21895,7 +21949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 1
+  drumType: 2
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -22116,7 +22170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 6
+  drumType: 7
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -22648,7 +22702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 8
+  drumType: 9
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
@@ -22757,7 +22811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eea87fc1e2335c4a927edd66d4a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumType: 7
+  drumType: 8
   soundSource: {fileID: 0}
   soundToPlay: {fileID: 0}
   highTomsound: {fileID: 8300000, guid: fa2fa8563e22539429a5aabfb7ef4701, type: 3}
